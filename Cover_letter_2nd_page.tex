@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{fullpage}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\usepackage[a4paper,total={7in,10.5in}]{geometry}
+
+
+\hyphenation{im-pre-se}
+
+\pagenumbering{arabic}
+\usepackage{longtable}
+
+\begin{document}
+\pagestyle{plain} % non-numbered pages
+
+
+%\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Georgios Chr. \textsc{Christodoulis}
+	}\bigskip\par}
+\hrule
+\par{As an undergraduate, and especially in my last year of studies, I had the opportunity to select a series of academic courses, in a more research oriented approach, and support them with corresponding implementation projects as presented extensively in my CV.}
+\par{The most important part of my research activity is the preparation of my diploma thesis titled “Performance modeling and Prediction for the communication of parallel applications”. One of the main challenges in the field of supercomputing is the development of fast and accurate performance models. Performance prediction is a powerful tool for the efficient deployment of modern high-end systems, performance optimization of applications and performance portability. Parallel applications, running on high core counts, commonly fail to scale up accordingly, suffering from communication overheads. In this thesis, we search for application and topology-related metrics of communication performance and study their relation to network congestion effects, through benchmarking. Combining this knowledge, we will attempt to predict performance and provide generic optimization guidelines at runtime for sparse-matrix applications.}
+\par{Besides research, as presented in detail to my curriculum vitae I have completed my studies on classical guitar with Honors obtaining my diploma during the third year of my undergraduate studies. I feel fascinated decrypting the compositions of famous musicians like Frédéric Chopin, Ludwig van Beethoven, Sergei Rachmaninoff, Heitor Villa-Lobos, Isaac Albeniz and Joaquín Rodrigo and my ambition is to apply their unconventional way of thinking to scientific research.}
+
+\par{}
+\par{}
+
+\end{document}

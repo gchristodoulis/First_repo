@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{fullpage}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\usepackage[a4paper,total={7in,10.5in}]{geometry}
+
+
+\hyphenation{im-pre-se}
+
+\pagenumbering{arabic}
+\usepackage{longtable}
+
+\begin{document}
+\pagestyle{plain} % non-numbered pages
+
+
+%\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Georgios Chr. \textsc{Christodoulis}
+	}\bigskip\par}
+\hrule
+\par{I am a student enrolled at National Technical University of Athens, currently doing an internship at LSV-ENS Cachan under the supervision of Stefan Haar, on “Petri-net unfolding of biological Networks”.  My research interests lie in the area of theoretical computing and concurrency and I wish to pursue a PhD because I would like to apply principles from the areas of graph theory, algorithmic analysis, verification and concurrency in order to develop techniques for manipulating the behavior of biological networks.}
+
+\par{My studies apply on the wide field of electrical and computer engineering. During the last year of my studies, I focused on my diploma thesis that revolved around the principles of parallel computing and how communication congestion impedes application scaling. This subject involves theoretical approaches on the potential scalability of a given algorithm, its inherent performance limitations, its dependencies-bounds (memory bounds, parallelization overhead, communication congestion), modeling of parallel systems’ architecture and optimization design given the architecture and a communication pattern. In order to have a reliable parallel model as described above, we need to ensure synchronization, coherence and consistency on systemic point of view so as to verify that the behavior of the concurrent model will be exactly the same as a serial one on a theoretical approach.}
+
+\par{During my undergraduate studies I had the chance to learn the principles of the life cycle of an eukaryote cell and its fundamental functions by voluntarily attending to an optional biology course. Perusing the mechanisms the cell uses to replicate itself and compose protein molecules from its genome and the principles of cell differentiation, we understand that the cell behaves as a finely tuned system. Getting familiar with the principles of Petri-nets, I apprehended they could evolve to a powerful tool towards the deeper understanding, modeling, and representing the eukaryote cell. Once a Petri-Net equivalent of a cell is constructed, we will be able to intervene on those mechanisms in different ways, giving them the desired attributes.}
+\par{Through my research as a PhD student, I would like to construct a stable model for the basic eukaryote cells’ functions. Moreover I would like to explore and verify the properties of Petri-Nets and their unfolding, so that we can obtain a powerful tool to control cells’ behavior, which could have a direct impact on medicine and pharmacology, since we will be able to identify and prevent undesirable cells’ functions (for example prevent the replication of a cancer cell by restricting the transition of some particular protein molecules).}
+\par{Obtaining a PhD in LSV-ENS Cachan, will be an important accomplishment and an asset for continuing my research either in academia or in industry.}
+\end{document}

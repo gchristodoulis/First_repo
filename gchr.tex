@@ -1,0 +1,166 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{fullpage}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\usepackage[a4paper,total={7in,10.5in}]{geometry}
+
+
+\hyphenation{im-pre-se}
+
+\pagenumbering{arabic}
+\usepackage{longtable}
+
+\begin{document}
+
+\pagestyle{plain} % non-numbered pages
+
+
+%\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Georgios Chr. \textsc{Christodoulis}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\section{Personal Information}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Patras, Greece  | $25$ August $1990$ \\
+    \textsc{Address:}   & I.Sechou $2$, $11524$, Athens, Greece \\
+    \textsc{Phone:}     & $+30$ $697$ $85$ $03$ $372$\\
+    \textsc{email:}     & \href{mailto:gchristodoulis@gmail.com}{gchristodoulis@gmail.com}
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}[l]{r|p{1400pt}}	
+\textsc{Current} & \textbf{Diploma }($5$-year degree)\\
+\textit{September $2008$} & School of Electrical and Computer Engineering,\\
+\textit{to}\textsc{(Estim)} &\normalsize\emph {National Technical University of Athens}, Greece\\
+\textit{June $2015$} &Thesis: "Performance modeling and Prediction for the communication of parallel applications"\\
+&\emph{Thesis Committee}: Prof Nektarios Koziris, Prof. Georgios Goumas\\
+&\emph{Majors}: Computer Systems, Computer Software\\
+&\emph{Minors}: Telecommunication Systems and Computer Networks, Electronics-Circuits-Materials\\\multicolumn{2}{c}{} \\
+\textit{September $2005$} & \textbf{General Lyceum }(Upper Secondary School)\\
+\textit{June $2008$} & 2nd General Experimental Lyceum of Athens, Greece\\\multicolumn{2}{c}{}
+\end{tabular}
+\section{Thesis Abstract}
+One of the main challenges in the field of supercomputing is the
+development of fast and accurate performance models.
+Performance prediction is a powerful tool for the efficient deployment of
+modern high-end systems, performance optimization of applications and
+performance portability. Parallel applications, running
+on high core counts, commonly fail to scale up accordingly,
+suffering from communication overheads. In this thesis,
+we search for \emph{application} and \emph{topology-related}
+metrics of \emph{communication performance} and study their relation
+to \emph{network congestion effects}, through benchmarking. Combining
+this knowledge, we will attempt to \emph{predict performance} and \emph{provide
+generic optimization guidelines} at runtime for sparse-matrix applications.
+
+\section{Scientific Interests}
+During my undergraduate studies I obtained a strong interest in the field of mathematics, logic and computer science. I am particularly interested in exploring applications of the above areas in the fields of biology, pharmacology and medicine. I am keen on continuing my academic coursework with a research oriented series of postgraduate studies.
+ 
+\section{Notable Academic Projects}
+\begin{longtable}{r|p{15cm}}
+\textit{$9^{th}$ semester} & \large{Parallel Processing Systems}
+\\& Exhaustive Speedup-scalability testing on LU Decomposition, focussing on two architecturally different implementations. Analysis aims to correlate the effects of algorithmic characteristics to parallelization prospects. Developed using the OpenMP API in a team of $4$ students.\\\multicolumn{2}{c}{}\\
+\textit{$9^{th}$ semester} & \large{Software Engineering} 
+\\& Design and implementation of three fully functional servers (Billing, Blocking, Forwarding), extending SIP on a given VOIP implementation, accompanied by Requirements Specification Documentation. Developed using Java, UML, MySQL.\\\multicolumn{2}{c}{}\\
+\textit{$9^{th}$ semester} & \large{Design of Analog Electronic systems} 
+\\& Analysis, design and implementation of a $10$W audio amplifier obligatory for academic course. Analysis,design and implementation of a class A-B audio amplifier and a class-D general purpose amplifier, regarding personal research interests, implemented with courses' mate.\\\multicolumn{2}{c}{}\\
+\textit{$7^{th}$ semester} & \large{Database Systems} 
+\\*& Design and implementation of a database management system simulating a complete realistic airport, following the MVC pattern. Developed using MySQL, PHP, HTML and Javascript in a team of $2$ students.\\\multicolumn{2}{c}{}
+\end{longtable}
+
+\section{Notable Academic Coursework}
+
+\begin{longtable}[l]{r|p{15cm}}
+\textit{$9^{th}$ semester} & \large{Neural Networks and Intelligent Systems}\\
+& The course is focused on Neural network models and architectures, convergence and stability, error-correction (multilayer perceptrons and backpropagation algorithm) and competitive learning algorithms. Associative, recurrent and radial basis function networks. Computational intelligence and intelligent system applications.\\\multicolumn{2}{c}{}\\
+\textit{$9^{th}$ semester} & \large{Advanced Topics in Database Systems}
+\\& The main topics covered in this course include: Concurrency Control and Recovery in relational database management systems. Distributed databases. Object-oriented database systems. Temporal database systems. Spatial database systems. Data warehouses. Data Mining.\\\multicolumn{2}{c}{}\\
+\textit{$8^{th}$ semester} & \large{Human-Machine Interaction}
+\\& The course focuses on methodologies for user-centered systems' design, development and evaluation, covering issues like conceptual models for interaction, technologies, methods and tools for human-machine interaction design, etc. The main topics are human-computer interaction, interaction design methodologies, rich interaction, ubiquitous computing, and augmented realities.\\\multicolumn{2}{c}{}\\
+\textit{$8^{th}$ semester} & \large{Advanced Topics in Computer Architecture}
+\\& The course is focused on modern CPU organization: control unit and datapath, pipelined architectures, memory hierarchy organization, multi-stage pipelines with variable latencies, branch prediction, Very large Instruction Word (VLIW) architectures, Instruction Level Parallelism (ILP), superscalar pipelines, out-of-order execution. Examples of modern processors, hyperthreading (HT), Simultaneous Multithreading (SMT) and Multicore chips.\\\multicolumn{2}{c}{}\\
+\textit{$7^{th}$ semester} & \large{Image and Video Analysis and Technology}
+\\& The course is focused on processing, analysis, management, search and retrieval of digital images and digital video. Emphasis on image and video characteristics, 2-D sampling and transforms, quantization, coding, transmission of still and moving images, enhancement, (non-linear) filtering and image analysis, feature extraction, classification, summarization.\\\multicolumn{2}{c}{}\\
+\end{longtable}
+
+\section{Technical Skills}
+\begin{tabular}{r|p{11cm}}
+\textit{Programming Languages} & C/C++, Python, ML, Matlab, Prolog, SQL, Java, Haskell, HTML/CSS
+\\&Assembly Languages: Intel $8085$/$8086$, AVR ASM\\\multicolumn{2}{c}{}\\
+\textit{Operating Systems} & Linux/UNIX (Arch-primary OS, Manjaro, Debian, Ubuntu), Windows, Mac OS X\\\multicolumn{2}{c}{}\\
+\textit{Tools} & Eclipse, Vim, Git, Pacman, Awesome(WM), \LaTeX\
+\\&Parallel Programing: OpenMP, MPI
+\\&Python Tools: Numpy, Matplotlib\\\multicolumn{2}{c}{}
+\end{tabular}
+
+\section{Achievements}
+\begin{tabular}{r|p{11cm}}
+\textit{June $2011$} & Highest Diploma Certification in Classical Guitar, Honors\\\multicolumn{2}{c}{}\\
+\textit{May $2008$} & $1^{st}$ Place, National Greco-Roman Wrestling Student Championship\\\multicolumn{2}{c}{}
+\end{tabular}
+
+
+\section{Extracurricular Activities}
+\begin{description}
+\item[Cine-noisi] \hfill \\
+Active member of the group of young people \emph{"Cine-noisi"}, who was granted by the \emph{Youth In Action EU program}, action $1.2$ Youth Initiatives, for the creation of the short movie \emph{"KANENAS"} (Translation: Nobody). The whole project had a social impact, referring to the loneliness of the elderly, through a learning process of the young people who implemented the project and who developed their personal and social competencies.
+\item[Traditional Dances] \hfill 
+\begin{itemize}
+\item Current teacher at Traditional Dances Department, of National Technical University of Athens.
+\item Active participation to the group "Chorovates".
+\item Diploma with Honors, for graduation of the historical Pontian group "Argonaytoi-komnhnoi".
+\end{itemize}
+\item[Chess] \hfill \\
+$1^{st}$ Place Diploma, Inter-Secondary School Championship.
+\item[Athletic Activity] \hfill \\
+8 Greco-Roman Wrestling Titles referring to Local Championships or Qualification Rounds towards National Championship.
+\item[Remembering Dances] \hfill \\
+Actively participated in the Exchange \emph{"Recordando Danzas"} as a part of the \emph{Youth in Action} program of the \emph{European Union} ($7$-$15$ June $2009$, Spain).
+\item[First Poetry Prize-Premier Prix de Poesie] \hfill \\
+$1^{st}$ Prize for the participation, with a team of classmates from secondary school, to the Greek poetry competition "Francophonie $2007$".
+\end{description}
+
+\section{Languages}
+\begin{tabular}{r|p{11cm}}	
+\textsc{Greek} & Mother tongue\\\multicolumn{2}{c}{}\\
+\textsc{English} & Advanced Certificate-Michigan($2006$)
+\end{tabular}
+
+\end{document}

@@ -86,9 +86,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
 
-
-\usepackage{tikz}
-\usetikzlibrary{arrows,shapes}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -105,12 +102,8 @@ CORSE$-$LIG\\ % Your institution for the title page
 \date{}
 
 
-\setlength{\parskip}{0.5em}
-\renewcommand{\baselinestretch}{1}
-
-\setlength\abovecaptionskip{-8pt}
-\setlength\belowcaptionskip{-8pt}
-
+\setlength{\parskip}{0.3em}
+\renewcommand{\baselinestretch}{0.5}
 
 \begin{document}
 
@@ -137,41 +130,31 @@ CORSE$-$LIG\\ % Your institution for the title page
 
 \begin{columns}[c]
 
-\column{.5\textwidth}
+\column{.3\textwidth}
 \begin{figure}
-\centering
-\includegraphics[width=.8\linewidth,right]{lut.jpg}
-\caption{ LUT  }
+\includegraphics[width=\linewidth,right]{lut.jpg}
 \end{figure}
 
-
-\vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0pt}
-$$y = ( a + b ) \cdot c $$
+ $$y = ( a + b ) \cdot c $$
 
 \begin{table}
 \centering
 \begin{tabular}{c|c}
-a b c & y \\
+abc & y \\
 \hline
-0 0 0 & 0\\
-0 0 1 & 0\\
-0 1 0 & 0\\
-0 1 1 & 0\\
-1 0 0 & 0\\
-1 0 1 & 1\\
-1 1 0 & 0\\
-1 1 1 & 1\\
+000 & 0\\
+001 & 0\\
+010 & 0\\
+011 & 0\\
+100 & 0\\
+101 & 1\\
+110 & 0\\
+111 & 1\\
 
 \end{tabular}
 \end{table}
 
-\column{.5\textwidth}
-
-\begin{figure}
-\includegraphics[width=1\linewidth,right]{ble.jpg}
-\caption{BLE} 
-\end{figure}
-
+\column{.7\textwidth}
 
 \end{columns}
 \end{frame}

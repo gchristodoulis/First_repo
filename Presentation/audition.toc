@@ -1,1 +1,2 @@
 \beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{FPGAs structure}{3}{0}{1}

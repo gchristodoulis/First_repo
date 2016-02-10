@@ -94,7 +94,7 @@
 %----------------------------------------------------------------------------------------
 %Unfolding the Quantitative Dynamics of Biological Networks
 \title[George Christodoulis]{FPGAs, HLS Tools \& Runtime Systems} % The short title appears at the bottom of every slide, the full title is only on the title page
-\subtitle{{\fontsize{8}{6}\selectfont Supervisors: Frederic Desprez, Francois Broquedis, Olivier Muller}}
+\subtitle{{\fontsize{8}{6}\selectfont (Super)Advisors: Frederic Desprez, Francois Broquedis, Olivier Muller}}
 \author{Georgios Christodoulis} % Your name
 \institute[NTUA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
@@ -132,21 +132,42 @@ CORSE$-$LIG\\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{FPGAs Structure}
-
+\framesubtitle{LUT}
 \section{FPGAs structure}
+\subsection{Look-Up Table}
+
 
 \begin{columns}[c]
 
-\column{.2\textwidth}
+\column{.5\textwidth}
 \begin{figure}
-\centering
-\includegraphics[width=.8\linewidth,right]{lut.jpg}
-\caption{ LUT  }
+\includegraphics[height=.75\textheight,left]{lutMux.jpg}
+\caption{$3$ stages of $2x1$ MUX}
 \end{figure}
 
+\column{.5\textwidth}
+\begin{itemize}
+\item It is a \alert{table} that ditermines what the output is for any given input
+\item A \alert{state-less} interconnection of any number of gates \\(no feedback loops)
+\item Implemented \emph{multiplexing} a combination of SRAM bits 
+\end{itemize}
 
-\vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0pt}
+
+\end{columns}
+
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{FPGAs Structure}
+\framesubtitle{LUT Example}
+
 $$y = ( a + b ) \cdot c $$
+
+\begin{columns}[c]
+
+
+\column{.4\textwidth}
 
 \begin{table}
 \centering
@@ -165,25 +186,41 @@ a b c & y \\
 \end{tabular}
 \end{table}
 
-\column{.5\textwidth}
+\column{.6\textwidth}
 \centering
 \begin{figure}
-\includegraphics[width=\linewidth,right]{ble.jpg}
-\caption{BLE}
+\includegraphics[width=.9\linewidth,left]{lutExplan.jpg}
+\caption{$y = ( a + b ) \cdot c $ }
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\linewidth,right]{pi.jpg}
-\caption{PI}
-\end{figure}
-
-\column{.4\textwidth}
 \end{columns}
 \end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{Basic Logic Element}
+\frametitle{FPGAs structure}
+\framesubtitle{BLE}
 
+\begin{figure}
+\includegraphics[width=.9\linewidth,left]{lutBle.jpg}
+\caption{Basic Logic Element}
+\end{figure}
+
+\end{frame}
 %------------------------------------------------
-%------------------------------------------------
-%------------------------------------------------
+\begin{frame}
+\subsection{Overview}
+\frametitle{FPGAs structure}
+\framesubtitle{Overview}
+
+\begin{figure}
+\includegraphics[width=.58\linewidth,center]{full.jpg}
+\caption{FPGAs Complete Overview}
+\end{figure}
+
+\end{frame}
+
+
 %------------------------------------------------
 %------------------------------------------------
 %------------------------------------------------

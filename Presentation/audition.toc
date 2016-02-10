@@ -1,2 +1,5 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{FPGAs structure}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Look-Up Table}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Basic Logic Element}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Overview}{6}{0}{1}

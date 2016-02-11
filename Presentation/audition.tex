@@ -87,8 +87,13 @@
 \usepackage{setspace}
 
 
+
+\usepackage{pgf}
 \usepackage{tikz}
-\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{arrows,automata}
+\usepackage[latin1]{inputenc}
+
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -222,8 +227,144 @@ a b c & y \\
 
 
 %------------------------------------------------
+\begin{frame}
+\section{Optimization Using HLS tools}
+\subsection{Problem Description}
+\frametitle{Problem Description}
+\framesubtitle{Matrix Multiplication}
+
+
+$$ C = A * B $$
+$$c_{ij}=\sum_{k=1}^{n}a_{ik} \* b_{kj} $$
+
+\begin{columns}[c]
+\column{.3\textwidth}
+\begin{tabular}{|c c c|}
+$c_{11}$&\dots&$c_{1n}$\\
+\vdots&\alert{$c_{km}$}&\vdots\\
+$c_{n1}$&\dots&$c_{nn}$\\
+\end{tabular}
+
+\column{.4\textwidth}
+\begin{tabular}{|c c c c|}
+$a_{11}$&$a_{12}$&\dots&$a_{1n}$\\
+\vdots&\vdots&&\vdots\\
+\alert{$a_{k1}$}&\alert{$a_{k2}$}&\dots&\alert{$a_{kn}$}\\
+\vdots&\vdots&&\vdots\\
+$a_{n1}$&$a_{n2}$&\dots&$a_{nn}$\\
+\end{tabular}
+
+\column{.4\textwidth}
+\begin{tabular}{|c c c c c|}
+$b_{11}$&\dots&\alert{$b_{1m}$}&\dots&$b_{1n}$\\
+$b_{21}$&\dots&\alert{$b_{2m}$}&\dots&$b_{2n}$\\
+\vdots&&\vdots&&\vdots\\
+$b_{n1}$&\dots&\alert{$b_{nm}$}&\dots&$b_{nn}$\\
+\end{tabular}
+
+\column{.2\textwidth}
+
+\end{columns}
+
+
+\end{frame}
 %------------------------------------------------
+\begin{frame}
+\subsection{Serial Version}
+\frametitle{No Directives}
+$$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
+
+
+\begin{columns}[c]
+\column{.1\textwidth}
+\column{.444\textwidth}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{ki}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{im}$};
+  \node[state] (D) [below right of=C] {$+$};
+  \node[] (F) [below of=B]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+
+\column{5\textwidth}
+
+\begin{itemize}
+\item $2n$ operations $\forall$ element
+\item $n^2$ elements
+\item[\Rightarrow]$2n^3$ operations
+\item $19$MFLOPS on the tested platform
+\end{itemize}
+\end{columns}
+\end{frame}
+
 %------------------------------------------------
+\begin{frame}
+\subsection{Opt1: Inner Loop Unrolling}
+\frametitle{Opt1: Sum Mul Overlaping}
+
+In the scope of this paper it is considered that the clock cycle is adjusted to the execution depth of the multiplication.
+
+\begin{columns}[c]
+
+\column{.2\textwidth}
+
+\column{.4\textwidth}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{im+1}$};
+  \node[shape=square,draw=black] (G) [below of=B] {$a_{ki}b_{im}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (D)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+
+\column{.5\textwidth}
+\begin{itemize}
+\item Complete overlaping between Multiplication and addition
+\item 35MFLOPS on the given machine
+\end{itemize}
+\end{columns}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{Pipeline}
+\frametitle{Pipeline}
+\alert{Initiation Interval} is called the number of cycles between two new iterations.\\
+In this case it is indicated by the time that the addition register is occupied.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{}
+\frametitle{}
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{}
+\frametitle{}
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{}
+\frametitle{}
+
+\end{frame}
 %------------------------------------------------
 %------------------------------------------------
 %------------------------------------------------

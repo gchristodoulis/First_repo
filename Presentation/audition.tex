@@ -93,6 +93,7 @@
 \usetikzlibrary{arrows,automata}
 %\usepackage[latin1]{inputenc}
 
+\usepackage{colortbl}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -135,10 +136,22 @@ CORSE$-$LIG\\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{FPGA}
+\framesubtitle{Description}
+\section{FPGAs structure}
+\subsection{Description}
+
+\par{A \emph{\alert{F}ield} \emph{\alert{P}rogrammable} \emph{\alert{G}ate} \emph{\alert{A}rray} is an integrated circuit designed to be configured by a customer or a designer after manufacturing – hence "Field-programmable".}
+
+\par{\alert{FPGA}s are semiconductor devices that are based around a matrix of configurable logic blocks (BLEs) connected via programmable interconnects.}
+
+\end{frame}
+%------------------------------------------------
 \begin{frame}
 \frametitle{FPGAs Structure}
 \framesubtitle{LUT}
-\section{FPGAs structure}
 \subsection{Look-Up Table}
 
 
@@ -239,7 +252,7 @@ $$c_{ij}=\sum_{k=1}^{n}a_{ik} \* b_{kj} $$
 
 \begin{columns}[c]
 
-
+\column{.01\textwidth}
 
 \column{.3\textwidth}
 
@@ -277,6 +290,7 @@ $b_{n1}$&\dots&\alert{$b_{nm}$}&\dots&$b_{nn}$\\
 \begin{frame}
 \subsection{Serial Version}
 \frametitle{No Directives}
+$$c_{ij}=\sum_{k=1}^{n}a_{ik} \* b_{kj} $$
 $$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
 
 
@@ -316,14 +330,33 @@ $$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
 %------------------------------------------------
 \begin{frame}
 \subsection{Opt1: Inner Loop Unrolling}
-\frametitle{Opt1: Sum Mul Overlaping}
+\frametitle{Inner Loop Unrolling}
+\framesubtitle{Opt1: Sum Mul Overlaping}
 
-In the scope of this paper it is considered that the clock cycle is adjusted to the execution depth of the multiplication.
+
+Our reference time interval is defined by the slowest operation which is the multiplication.
 
 \begin{columns}[c]
 
+\column{.3\textwidth}
+\scalebox{0.8}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{ki}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{im}$};
+  \node[state] (D) [below right of=C] {$+$};
+  \node[] (F) [below of=B]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
 \column{.2\textwidth}
-\column{.4\textwidth}
+\scalebox{0.9}{
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
   \tikzstyle{every state}=[fill=red,draw=none,text=white]
 
@@ -340,8 +373,8 @@ In the scope of this paper it is considered that the clock cycle is adjusted to 
 	(G) edge (D)
 	(F) edge (D);
 \end{tikzpicture}
-
-\column{.5\textwidth}
+}
+\column{.6\textwidth}
 \begin{itemize}
 \item Complete overlaping between Multiplication and addition
 \item 35MFLOPS on the given machine
@@ -355,76 +388,219 @@ In the scope of this paper it is considered that the clock cycle is adjusted to 
 \frametitle{Pipeline}
 \alert{Initiation Interval} is called the number of cycles between two new iterations.\\
 In this case it is indicated by the time that the addition register is occupied.
+
+\begin{columns}[c]
+\column{.2\textwidth}
+\scalebox{0.8}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{im+1}$};
+  \node[shape=rectangle,draw=black] (G) [below of=B] {$a_{ki}b_{im}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (G)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
+\column{.2\textwidth}
+\scalebox{0.8}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{im+1}$};
+  \node[shape=rectangle,draw=black,fill=black!50] (G) [below of=B] {$a_{ki}b_{im}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (G)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
+
+\column{.5\textwidth}
+\begin{figure}
+\includegraphics[width=.9\linewidth,center]{pipeline.jpg}
+\end{figure}
+\end{columns}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-\subsection{}
-\frametitle{}
+\frametitle{J-loop unrolling}
+\subsection{J-loop Unrolling}
 
-\end{frame}
-%------------------------------------------------
-\begin{frame}
-\subsection{}
-\frametitle{}
-
-\end{frame}
-%------------------------------------------------
-\begin{frame}
-\subsection{}
-\frametitle{}
-
-\end{frame}
-%------------------------------------------------
-%------------------------------------------------
-%------------------------------------------------
-%------------------------------------------------
-
-\iffalse
-
-\begin{frame}
-\frametitle{Parallel Architectures}
 \begin{columns}[c]
 
-\column{.8\textwidth}
-\linespread{0.5}
-\begin{block}{Shared Memory}
-\begin{enumerate}
-\item {\fontsize{8}{6}\selectfont Processors share the same physical memory}
-\item {\fontsize{8}{6}\selectfont Local cache memory hierarchy}
-\item {\fontsize{8}{6}\selectfont Connection via memory bus}
-\end{enumerate}
-\end{block}
+\column{.4\textwidth}
+\begin{tabular}{c c c c}
+\rowcolor{olive!15}
+$a_{k1}$&$a_{k2}$&\dots&$a_{kn}$\\
+\end{tabular}
 
-\begin{block}{Distributed Memory}
-\begin{enumerate}
-\item {\fontsize{8}{6}\selectfont Every processor has its own memory hierarcy}
-\item {\fontsize{8}{6}\selectfont Processor communication via interconnection network}
-\end{enumerate}
-\end{block}
+\begin{beamercolorbox}[shadow=false,rounded=true]{box2}
+{\usebeamercolor[fg]{text2} }
+\begin{tabular}{c}
+\\
+\end{tabular}
+\end{beamercolorbox}
 
-\begin{block}{Hybrid Architectures}
-Dominant architecture for modern supercomputers.
-\end{block}
+\scalebox{0.8}{
+\begin{beamercolorbox}[shadow=false,rounded=true]{box2}
+{\usebeamercolor[fg]{text2} }
+\begin{itemize}
+\item Extra Hardware
+\item Real Parallelism (Superscalar CPU architectures)
+\item Expected scaling: $\times n$
+\item Actual scaling: $\times 2$
+\end{itemize}
+\end{beamercolorbox}
+}
 
-\column{.3\textwidth}
+\column{.1\textwidth}
+\begin{table}
+\begin{tabular}{ >{\columncolor{red!15}}c}
+$b_{11}$\\
+$b_{21}$\\
+\vdots\\
+$b_{n1}$\\
+\end{tabular}
+\end{table}
+\scalebox{0.4}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{1m+1}$};
+  \node[shape=rectangle,draw=black,fill=black!50] (G) [below of=B] {$a_{ki}b_{1m}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (G)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
+
+
+\column{.1\textwidth}
+\begin{table}
+\begin{tabular}{ >{\columncolor{blue!15}}c}
+$b_{12}$\\
+$b_{22}$\\
+\vdots\\
+$b_{n2}$\\
+\end{tabular}
+\end{table}
+\scalebox{0.4}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{2m+1}$};
+  \node[shape=rectangle,draw=black,fill=black!50] (G) [below of=B] {$a_{ki}b_{2m}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (G)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
+
+\column{.1\textwidth}
+\begin{tabular}{c}
+\dots\\
+\dots\\
+\\
+\dots\\
+\end{tabular}
+
+\begin{beamercolorbox}[shadow=false,rounded=true]{box2}
+{\usebeamercolor[fg]{text2} }
+\begin{tabular}{c}
+\\\\\\\dots\\\\\\\\
+\end{tabular}
+\end{beamercolorbox}
+
+\column{.1\textwidth}
+\begin{table}
+\begin{tabular}{ >{\columncolor{green!15}}c}
+$b_{1n}$\\
+$b_{2n}$\\
+\vdots\\
+$b_{nn}$\\
+\end{tabular}
+\end{table}
+\scalebox{0.4}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+  \tikzstyle{every state}=[fill=red,draw=none,text=white]
+
+  \node[] (A) {$a_{k+1i}$};
+  \node[state] (C) [below right of=A] {$*$};
+  \node[] (B) [below left of=C] {$b_{nm+1}$};
+  \node[shape=rectangle,draw=black,fill=black!50] (G) [below of=B] {$a_{ki}b_{nm}$};
+  \node[state] (D) [below right of=G] {$+$};
+  \node[] (F) [below left of=D]{Acc};
+  
+  \path (A) edge (C)
+	(B) edge (C)
+	(C) edge (G)
+	(G) edge (D)
+	(F) edge (D);
+\end{tikzpicture}
+}
+
+
+\end{columns}
+
+\alert{Memmory Bounds}: Dual Channeled memory $\implies$ only $2$ concurent operations.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{Array Partitioning}
+\frametitle{Row / Col Partitioning}
+
+\begin{columns}[c]
+
+
+\column{.5\textwidth}
 \begin{figure}
-\includegraphics[width=\linewidth,right]{shared_mem.jpg}
+\includegraphics[width=1.2\linewidth,center]{arraysplit.jpg}
+\caption{Distribute the array into multiple BRAMS}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=\linewidth,right]{distributed_mem.jpg}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=\linewidth,right]{hybrid_mem.jpg}
-\end{figure}
+\column{.5\textwidth}
 
 \end{columns}
 
 \end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{}
+\frametitle{}
 
-
-\fi
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
 %------------------------------------------------
 
 

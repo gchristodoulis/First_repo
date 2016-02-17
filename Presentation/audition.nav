@@ -6,43 +6,46 @@
 \headcommand {\sectionentry {1}{FPGAs structure}{3}{FPGAs structure}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Look-Up Table}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Description}}\headcommand {\beamer@subsectionpages {3}{2}}
 \headcommand {\slideentry {1}{1}{0}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{1}{4/4}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Look-Up Table}}\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\slideentry {1}{2}{0}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Basic Logic Element}}\headcommand {\beamer@subsectionpages {1}{4}}
-\headcommand {\slideentry {1}{2}{0}{5/5}{}{0}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{6}{Overview}}\headcommand {\beamer@subsectionpages {1}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{6}{Basic Logic Element}}\headcommand {\beamer@subsectionpages {1}{5}}
 \headcommand {\slideentry {1}{3}{0}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\sectionentry {2}{Optimization Using HLS tools}{7}{Optimization Using HLS tools}{0}}
-\headcommand {\beamer@sectionpages {1}{6}}
-\headcommand {\beamer@subsectionpages {1}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Problem Description}}\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\slideentry {2}{1}{0}{7/7}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{7}{Overview}}\headcommand {\beamer@subsectionpages {1}{6}}
+\headcommand {\slideentry {1}{4}{0}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{Serial Version}}\headcommand {\beamer@subsectionpages {1}{7}}
-\headcommand {\slideentry {2}{2}{0}{8/8}{}{0}}
+\headcommand {\sectionentry {2}{Optimization Using HLS tools}{8}{Optimization Using HLS tools}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Problem Description}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {2}{1}{0}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{9}{Opt1: Inner Loop Unrolling}}\headcommand {\beamer@subsectionpages {1}{8}}
-\headcommand {\slideentry {2}{3}{0}{9/9}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Serial Version}}\headcommand {\beamer@subsectionpages {1}{8}}
+\headcommand {\slideentry {2}{2}{0}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{10}{Pipeline}}\headcommand {\beamer@subsectionpages {1}{9}}
-\headcommand {\slideentry {2}{4}{0}{10/10}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{10}{Opt1: Inner Loop Unrolling}}\headcommand {\beamer@subsectionpages {1}{9}}
+\headcommand {\slideentry {2}{3}{0}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{5}{11}{}}\headcommand {\beamer@subsectionpages {1}{10}}
-\headcommand {\slideentry {2}{5}{0}{11/11}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{11}{Pipeline}}\headcommand {\beamer@subsectionpages {1}{10}}
+\headcommand {\slideentry {2}{4}{0}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{6}{12}{}}\headcommand {\beamer@subsectionpages {1}{11}}
-\headcommand {\slideentry {2}{6}{0}{12/12}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{12}{J-loop Unrolling}}\headcommand {\beamer@subsectionpages {1}{11}}
+\headcommand {\slideentry {2}{5}{0}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{7}{13}{}}\headcommand {\beamer@subsectionpages {1}{12}}
-\headcommand {\slideentry {2}{7}{0}{13/13}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{13}{Array Partitioning}}\headcommand {\beamer@subsectionpages {1}{12}}
+\headcommand {\slideentry {2}{6}{0}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {1}{13}}
-\headcommand {\beamer@sectionpages {1}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\def \inserttotalframenumber {13}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{14}{}}\headcommand {\beamer@subsectionpages {1}{13}}
+\headcommand {\slideentry {2}{7}{0}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {1}{14}}
+\headcommand {\beamer@sectionpages {1}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\def \inserttotalframenumber {14}}

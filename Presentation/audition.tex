@@ -91,7 +91,7 @@
 \usepackage{pgf}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
 
 
 %----------------------------------------------------------------------------------------
@@ -207,7 +207,7 @@ a b c & y \\
 \framesubtitle{BLE}
 
 \begin{figure}
-\includegraphics[width=.9\linewidth,left]{lutBle.jpg}
+\includegraphics[width=.9\linewidth,left]{lutBLE.jpg}
 \caption{Basic Logic Element}
 \end{figure}
 
@@ -238,7 +238,11 @@ $$ C = A * B $$
 $$c_{ij}=\sum_{k=1}^{n}a_{ik} \* b_{kj} $$
 
 \begin{columns}[c]
+
+
+
 \column{.3\textwidth}
+
 \begin{tabular}{|c c c|}
 $c_{11}$&\dots&$c_{1n}$\\
 \vdots&\alert{$c_{km}$}&\vdots\\
@@ -264,6 +268,7 @@ $b_{n1}$&\dots&\alert{$b_{nm}$}&\dots&$b_{nn}$\\
 
 \column{.2\textwidth}
 
+
 \end{columns}
 
 
@@ -277,7 +282,8 @@ $$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
 
 \begin{columns}[c]
 \column{.1\textwidth}
-\column{.444\textwidth}
+\column{.4\textwidth}
+
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
   \tikzstyle{every state}=[fill=red,draw=none,text=white]
 
@@ -292,16 +298,19 @@ $$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
 	(C) edge (D)
 	(F) edge (D);
 \end{tikzpicture}
-
 \column{5\textwidth}
 
 \begin{itemize}
 \item $2n$ operations $\forall$ element
 \item $n^2$ elements
-\item[\Rightarrow]$2n^3$ operations
+\item[$\Rightarrow$] $2n^3$ operations
 \item $19$MFLOPS on the tested platform
 \end{itemize}
+
+
 \end{columns}
+
+
 \end{frame}
 
 %------------------------------------------------
@@ -314,7 +323,6 @@ In the scope of this paper it is considered that the clock cycle is adjusted to 
 \begin{columns}[c]
 
 \column{.2\textwidth}
-
 \column{.4\textwidth}
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
   \tikzstyle{every state}=[fill=red,draw=none,text=white]
@@ -322,13 +330,13 @@ In the scope of this paper it is considered that the clock cycle is adjusted to 
   \node[] (A) {$a_{k+1i}$};
   \node[state] (C) [below right of=A] {$*$};
   \node[] (B) [below left of=C] {$b_{im+1}$};
-  \node[shape=square,draw=black] (G) [below of=B] {$a_{ki}b_{im}$};
+  \node[shape=rectangle,draw=black] (G) [below of=B] {$a_{ki}b_{im}$};
   \node[state] (D) [below right of=G] {$+$};
   \node[] (F) [below left of=D]{Acc};
   
   \path (A) edge (C)
 	(B) edge (C)
-	(C) edge (D)
+	(C) edge (G)
 	(G) edge (D)
 	(F) edge (D);
 \end{tikzpicture}
@@ -338,6 +346,7 @@ In the scope of this paper it is considered that the clock cycle is adjusted to 
 \item Complete overlaping between Multiplication and addition
 \item 35MFLOPS on the given machine
 \end{itemize}
+
 \end{columns}
 \end{frame}
 %------------------------------------------------

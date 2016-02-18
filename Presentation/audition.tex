@@ -94,6 +94,7 @@
 %\usepackage[latin1]{inputenc}
 
 \usepackage{colortbl}
+\usepackage{multicol}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -129,7 +130,9 @@ CORSE$-$LIG\\ % Your institution for the title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\begin{multicols}{2}
 \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, 
+\end{multicols}
 %these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -318,7 +321,6 @@ $$c_{km}=a_{k1}b_{1m}+a_{k2}b_{2m}+\dots+a_{kn}b_{nm}$$
 \item $2n$ operations $\forall$ element
 \item $n^2$ elements
 \item[$\Rightarrow$] $2n^3$ operations
-\item $19$MFLOPS on the tested platform
 \end{itemize}
 
 
@@ -377,14 +379,13 @@ Our reference time interval is defined by the slowest operation which is the mul
 \column{.6\textwidth}
 \begin{itemize}
 \item Complete overlaping between Multiplication and addition
-\item 35MFLOPS on the given machine
 \end{itemize}
 
 \end{columns}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-\subsection{Pipeline}
+\subsection{Opt2: Pipeline}
 \frametitle{Pipeline}
 \alert{Initiation Interval} is called the number of cycles between two new iterations.\\
 In this case it is indicated by the time that the addition register is occupied.
@@ -438,7 +439,7 @@ In this case it is indicated by the time that the addition register is occupied.
 %------------------------------------------------
 \begin{frame}
 \frametitle{J-loop unrolling}
-\subsection{J-loop Unrolling}
+\subsection{Opt3: J-loop Unrolling}
 
 \begin{columns}[c]
 
@@ -548,6 +549,8 @@ $b_{2n}$\\
 $b_{nn}$\\
 \end{tabular}
 \end{table}
+
+
 \scalebox{0.4}{
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
   \tikzstyle{every state}=[fill=red,draw=none,text=white]
@@ -574,35 +577,188 @@ $b_{nn}$\\
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-\subsection{Array Partitioning}
+\subsection{Opt4: Array Partitioning}
 \frametitle{Row / Col Partitioning}
 
 \begin{columns}[c]
 
 
-\column{.5\textwidth}
+
+\column{.3\textwidth}
+$$A$$
+\begin{table}
+\begin{tabular}{c c c c}
+\rowcolor{red!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\rowcolor{red!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\rowcolor{green!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\rowcolor{green!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\rowcolor{blue!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\rowcolor{blue!25}
+\hphantom{ad}&\hphantom{ad}&\hphantom{ad}&\hphantom{ad}\\
+\end{tabular}
+\end{table}
+
+\column{.4\textwidth}
+$$B$$
+\begin{table}
+\begin{tabular}{ >{\columncolor{red!25}}c >{\columncolor{red!25}}c >{\columncolor{green!25}}c >{\columncolor{green!25}}c >{\columncolor{blue!25}}c >{\columncolor{blue!25}}c }
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\hphantom{a}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{d}&\hphantom{a}\\
+\end{tabular}
+\end{table}
+
+\end{columns}
+
+\begin{columns}[c]
+
+\column{.4\textwidth}
+
+\begin{itemize}
+\item Distributing arrays into different BRAMs increases scaling proportinally to hardware addition
+\end{itemize}
+
+\column{.6\textwidth}
 \begin{figure}
-\includegraphics[width=1.2\linewidth,center]{arraysplit.jpg}
+\includegraphics[width=.6\linewidth,center]{arraysplit.jpg}
 \caption{Distribute the array into multiple BRAMS}
 \end{figure}
 
-\column{.5\textwidth}
-
-\
-
 \end{columns}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{Opt5: Maximize Resource Use}
+\frametitle{Maximize Resource Use}
+
+\begin{block}{Maximize DSP use}
+\end{block}
+\begin{itemize}
+\item Since we have succeeded II=1 we increase n in order to maximize DSP usage
+\item In our case n=32 $\implies$ $72\%$ usage while n=43 $\implies$ $98\%$ usage
+\end{itemize}
+
+\begin{block}{Maximize BRAM use}
+\begin{itemize}
+\item Increasing n increases BRAM usage too
+\end{itemize}
+\end{block}
+
 
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-\subsection{}
-\frametitle{}
+\subsection{Opt6: Improve I/O}
+\frametitle{Improve I/O}
+
+\begin{columns}[c]
+
+\column{.4\linewidth}
+\scalebox{0.8}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+\tikzstyle{every state}=[fill=red,draw=none,text=white]
+\node[shape=rectangle,draw=black] (A) [] {FPGA};
+\node[] (C) [below of=A] {100Mhz};
+\node[] (D) [right of=A] {32bits};
+\node[shape=rectangle,draw=black] (B) [right of=D] {CPU};
+\path (A) edge (D)
+	(D) edge (B)
+	(C) edge (A);
+\end{tikzpicture}
+}
+\begin{itemize}
+\item $100Mhz \times 32\text{bits} = 400\text{MB}/s$
+\item So the default communication speed is 400MB/s
+\end{itemize}
+
+\column{.1\linewidth}
+\column{.6\linewidth}
+
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+\tikzstyle{every state}=[fill=red,draw=none,text=white]
+\node[shape=rectangle,draw=black] (A) [] {FPGA};
+\node[] (C) [below of=A] {100Mhz};
+\node[] (D) [right of=A] {128bits};
+\node[shape=rectangle,draw=black] (B) [right of=D] {AXI DMA};
+\node[] (E) [right of=B] {64bits};
+\node[shape=rectangle,draw=black] (F) [right of=E] {CPU};
+\path (A) edge (D)
+	(D) edge (B)
+	(C) edge (A)
+	(B) edge (E)
+	(E) edge (F);
+
+\end{tikzpicture}
+}
+
+\begin{itemize}
+\item $100Mhz \times 128 \text{bits} = 1.6\text{GB}/s$
+\item AXI DMAs limit is 1.2GB/s at 64bits channel width 
+\end{itemize}
+\end{columns}
+
+\alert{Bottomline:} We increased our communication bandwidth from 400MB/s to 1.2GB/s
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\subsection{Opt6: Block Computation}
+\frametitle{Block Computation}
+
+\begin{columns}[c]
+
+\column{.5\linewidth}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.8cm, semithick]
+\node[] (M) [] {$c_{ij}=$};
+\node[shape=rectangle, draw=black, fill=red!10] (A) [right of=M] {$\sum_{k=0}^{m-1}$};
+\node[] (B) [below of=A] {CPU};
+\node[shape=rectangle, draw=black, fill=blue!10] (C) [right of=A] {$A_{ik}B_{kj}$};
+\node[] (D) [below of=C] {FPGA};
+\path (B) edge (A)
+	(D) edge (C);
+\end{tikzpicture}
+
+
+\column{.5\linewidth}
+\begin{itemize}
+\item Multiplications on FPGA
+\item Addictions on CPU
+\end{itemize}
+\end{columns}
+
+This optimization is suitable much larger matrixes than the previous, more significantly when n exceeds 2000 entries.
 
 \end{frame}
 %------------------------------------------------
+\begin{frame}
+\subsection{Optimizations Review}
+\frametitle{Optimizations Review}
+Naive Implementation 0.019GFLOPS
+\begin{itemize}
+\item Inner Loop Unrolling 0.035 GFLOPS
+\item Pipeline Inner Loop 0.044 GFLOPS
+\item Unrol Loop J 0.188 GFLOPS
+\item Row/Col Partitioning 0.33 GFLOPS
+\item Maximize DSPs 1.247 GFLOPS
+\item Maximize Resource Usage 2.886 GFLOPS
+\item Improve I/O 3.573 GFLOPS
+\item Block Computation 4.107 GFLOPS
+\item Optimize Communication 4.695 GFLOPS
+\end{itemize}
+\end{frame}
 %------------------------------------------------
-%------------------------------------------------
-%------------------------------------------------
+\begin{frame}
+Thank You!
+
+\end{frame}
 %------------------------------------------------
 
 

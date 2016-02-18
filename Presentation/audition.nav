@@ -49,13 +49,13 @@
 \headcommand {\beamer@subsectionentry {0}{2}{6}{16}{Opt4: Array Partitioning}}\headcommand {\beamer@subsectionpages {1}{15}}
 \headcommand {\slideentry {2}{6}{0}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{2}{7}{17}{Opt5: Maximize Resource Use}}\headcommand {\beamer@subsectionpages {1}{16}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{17}{Opt5: Max Resource Use}}\headcommand {\beamer@subsectionpages {1}{16}}
 \headcommand {\slideentry {2}{7}{0}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
 \headcommand {\beamer@subsectionentry {0}{2}{8}{18}{Opt6: Improve I/O}}\headcommand {\beamer@subsectionpages {1}{17}}
 \headcommand {\slideentry {2}{8}{0}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionentry {0}{2}{9}{19}{Opt6: Block Computation}}\headcommand {\beamer@subsectionpages {1}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{9}{19}{Opt7: Block Computation}}\headcommand {\beamer@subsectionpages {1}{18}}
 \headcommand {\slideentry {2}{9}{0}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\beamer@subsectionentry {0}{2}{10}{20}{Optimizations Review}}\headcommand {\beamer@subsectionpages {1}{19}}

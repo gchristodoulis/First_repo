@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.21)  18 FEB 2016 03:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.21)  18 FEB 2016 03:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,23 +1158,48 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \mult@nat@firstbox=\box104
 \colbreak@box=\box105
 \mc@col@check@num=\count177
-) (./audition.aux)
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count178
+\lst@gtempboxa=\box106
+\lst@token=\toks51
+\lst@length=\count179
+\lst@currlwidth=\dimen290
+\lst@column=\count180
+\lst@pos=\count181
+\lst@lostspace=\dimen291
+\lst@width=\dimen292
+\lst@newlines=\count182
+\lst@lineno=\count183
+\lst@maxwidth=\dimen293
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count184
+\lst@skipnumbers=\count185
+\lst@framebox=\box107
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (./audition.aux)
 \openout1 = `audition.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1212,17 +1237,17 @@ LaTeX Font Info:    ... okay on input line 122.
 
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
-\scratchdimen=\dimen290
-\scratchbox=\box106
-\nofMPsegments=\count179
-\nofMParguments=\count180
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count181
-\MPscratchDim=\dimen291
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count186
+\scratchdimen=\dimen294
+\scratchbox=\box108
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen295
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1239,8 +1264,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box107
-Package hyperref Info: Link coloring OFF on input line 122.
+\AtBeginShipoutBox=\box109
+Package hyperref Info: Link coloring OFF on input line 123.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1248,68 +1273,68 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count184
+\c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 
 (./audition.out) (./audition.out)
 \@outlinefile=\write5
 \openout5 = `audition.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 122.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 123.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 122.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 122.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 122.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 122.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 122.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 122.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 122.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 122.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 122.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 122.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 122.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 122.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 122.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 122.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 122.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 122.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 122.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 122.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 123.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-22.
+23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-122.
+123.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 122.
+ut line 123.
 
 (/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1335,20 +1360,21 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 122.
+LaTeX Info: Redefining \includegraphics on input line 123.
+\c@lstlisting=\count193
  (./audition.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 126.
+LaTeX Font Info:    Try loading font information for U+msa on input line 127.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 126.
+LaTeX Font Info:    Try loading font information for U+msb on input line 127.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 126.
+line 127.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1356,7 +1382,7 @@ thkerncmss.
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 126.
+(Font)              size <5> substituted on input line 127.
 
 [1
 
@@ -1365,90 +1391,797 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <lutMux.jpg, id=130, 411.5375pt x 468.75125pt>
+] <lutMux.jpg, id=136, 411.5375pt x 468.75125pt>
 File: lutMux.jpg Graphic file (type jpg)
  <use lutMux.jpg>
-Package pdftex.def Info: lutMux.jpg used on input line 179.
+Package pdftex.def Info: lutMux.jpg used on input line 180.
 (pdftex.def)             Requested size: 171.95287pt x 195.85995pt.
 
 [4
 
- <./lutMux.jpg>] <lutExplan.jpg, id=137, 330.23375pt x 315.1775pt>
+ <./lutMux.jpg>] <lutExplan.jpg, id=143, 330.23375pt x 315.1775pt>
 File: lutExplan.jpg Graphic file (type jpg)
 
 <use lutExplan.jpg>
-Package pdftex.def Info: lutExplan.jpg used on input line 218.
+Package pdftex.def Info: lutExplan.jpg used on input line 219.
 (pdftex.def)             Requested size: 165.93709pt x 158.37706pt.
  [5
 
  <./lutExplan.jpg>]
-<lutBLE.jpg, id=144, 1452.42625pt x 789.95125pt>
+<lutBLE.jpg, id=150, 1452.42625pt x 789.95125pt>
 File: lutBLE.jpg Graphic file (type jpg)
  <use lutBLE.jpg>
-Package pdftex.def Info: lutBLE.jpg used on input line 230.
+Package pdftex.def Info: lutBLE.jpg used on input line 231.
 (pdftex.def)             Requested size: 276.559pt x 150.40569pt.
  [6
 
- <./lutBLE.jpg>] <full.jpg, id=149, 641.39626pt x 675.52374pt>
+ <./lutBLE.jpg>] <full.jpg, id=155, 641.39626pt x 675.52374pt>
 File: full.jpg Graphic file (type jpg)
  <use full.jpg>
-Package pdftex.def Info: full.jpg used on input line 242.
+Package pdftex.def Info: full.jpg used on input line 243.
 (pdftex.def)             Requested size: 178.22868pt x 187.71259pt.
  [7
 
- <./full.jpg>]
-Overfull \hbox (14.51433pt too wide) in paragraph at lines 291--291
+ <./full.jpg>] (./behavior.vhdl
+Overfull \hbox (30.31699pt too wide) in paragraph at lines 2--4
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 7--9
+[][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+[][][][][][][][][][]
+ []
+
+
+Overfull \hbox (23.74692pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 14--16
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 16--18
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.01767pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 22.
+
+LaTeX Font Info:    No file OMLcmss.fd. on input line 22.
+
+LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 22.
+
+
+Overfull \hbox (17.17685pt too wide) in paragraph at lines 23--24
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 25--26
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.45712pt too wide) in paragraph at lines 33--34
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.45712pt too wide) in paragraph at lines 35--36
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (148.57822pt too wide) in paragraph at lines 44--46
+[][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (36.88705pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (36.88705pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 50--51
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (76.30746pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 52--53
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (36.88705pt too wide) in paragraph at lines 54--55
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (181.42856pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.14828pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+[][][][][][][][][][]
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 64--66
+[][][][][][][][][][][][][][][][] 
+ []
+
+)
+Overfull \hbox (161.64394pt too wide) in paragraph at lines 263--263
+[][]  
+ []
+
+(./testbench.vhdl
+Overfull \hbox (30.31699pt too wide) in paragraph at lines 2--4
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 6--7
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 7--8
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 8--9
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 9--10
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 10--11
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (89.4476pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (181.42856pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 17--18
+[][][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 18--19
+[][][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 19--20
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 20--21
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 21--22
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 22--23
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 23--25
+[][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 30--31
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.31699pt too wide) in paragraph at lines 31--32
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (181.42856pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (76.30746pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (214.2789pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (128.86801pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (122.29794pt too wide) in paragraph at lines 46--47
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (253.69931pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 52--53
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 53--54
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 55--56
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 56--57
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (17.17685pt too wide) in paragraph at lines 57--58
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (17.17685pt too wide) in paragraph at lines 58--59
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 59--60
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 60--61
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 61--62
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (4.03671pt too wide) in paragraph at lines 62--63
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 64--65
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (109.1578pt too wide) in paragraph at lines 68--69
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (161.71835pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.45712pt too wide) in paragraph at lines 72--74
+[][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 72--74
+[][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 74.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 74.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 74.
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 74--76
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (168.28842pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (128.86801pt too wide) in paragraph at lines 77--79
+[][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (30.31699pt too wide) in paragraph at lines 79--80
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 81--82
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 82--83
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (122.29794pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (122.29794pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.02719pt too wide) in paragraph at lines 85--86
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (76.30746pt too wide) in paragraph at lines 86--87
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.87753pt too wide) in paragraph at lines 87--88
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (168.28842pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.74692pt too wide) in paragraph at lines 89--90
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 90--91
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+[][][][][][]
+ []
+
+
+Overfull \hbox (187.99863pt too wide) in paragraph at lines 94--96
+[][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (148.57822pt too wide) in paragraph at lines 96--97
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (142.00815pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (260.26938pt too wide) in paragraph at lines 98--100
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.16733pt too wide) in paragraph at lines 100--101
+[][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 100--101
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (17.17685pt too wide) in paragraph at lines 104--107
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (128.86801pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 111--112
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (299.68979pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (174.85849pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (339.1102pt too wide) in paragraph at lines 114--115
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.74692pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (378.53061pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (260.26938pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.31699pt too wide) in paragraph at lines 123--124
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.59726pt too wide) in paragraph at lines 124--126
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (102.58774pt too wide) in paragraph at lines 126--128
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.14828pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (207.70883pt too wide) in paragraph at lines 129--130
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (23.74692pt too wide) in paragraph at lines 130--131
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (10.60678pt too wide) in paragraph at lines 133--134
+[][][][][][][][]
+ []
+
+
+Overfull \hbox (181.42856pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Overfull \hbox (7.10435pt too wide) in paragraph at lines 263--263
 [][]  
  []
 
 
-Overfull \hbox (38.34889pt too wide) detected at line 291
-[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][
-][][][][][] $[]$[][][][][][] 
+Overfull \vbox (537.76416pt too high) detected at line 263
  []
 
 [8
 
 ]
-Overfull \hbox (1325.89891pt too wide) detected at line 330
-[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+Overfull \hbox (14.51433pt too wide) in paragraph at lines 310--310
+[][]  
+ []
+
+
+Overfull \hbox (38.34889pt too wide) detected at line 310
+[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][
+][][][][][] $[]$[][][][][][] 
  []
 
 [9
 
 ]
-Overfull \hbox (6.08977pt too wide) in paragraph at lines 385--385
-[][]  
+Overfull \hbox (1325.89891pt too wide) detected at line 349
+[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [10
 
-] <pipeline.jpg, id=169, 332.24126pt x 289.08pt>
+]
+Overfull \hbox (6.08977pt too wide) in paragraph at lines 404--404
+[][]  
+ []
+
+[11
+
+] <pipeline.jpg, id=181, 332.24126pt x 289.08pt>
 File: pipeline.jpg Graphic file (type jpg)
  <use pipeline.jpg>
-Package pdftex.def Info: pipeline.jpg used on input line 438.
+Package pdftex.def Info: pipeline.jpg used on input line 457.
 (pdftex.def)             Requested size: 138.2795pt x 120.31442pt.
- [11
+ [12
 
- <./pipeline.jpg>] [12
+ <./pipeline.jpg>] [13
 
-] <arraysplit.jpg, id=179, 641.39626pt x 324.21124pt>
+] <arraysplit.jpg, id=191, 641.39626pt x 324.21124pt>
 File: arraysplit.jpg Graphic file (type jpg)
 
 <use arraysplit.jpg>
-Package pdftex.def Info: arraysplit.jpg used on input line 636.
+Package pdftex.def Info: arraysplit.jpg used on input line 655.
 (pdftex.def)             Requested size: 110.62659pt x 55.9166pt.
- [13
+ [14
 
- <./arraysplit.jpg>] [14
-
-] [15
+ <./arraysplit.jpg>] [15
 
 ] [16
 
 ] [17
 
 ] [18
+
+] [19
 
 ]
 \tf@nav=\write6
@@ -1460,29 +2193,32 @@ Package pdftex.def Info: arraysplit.jpg used on input line 636.
 \tf@snm=\write8
 \openout8 = `audition.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 765.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 765.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
 
 (./audition.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 765.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 765.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 784.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
 Package rerunfilecheck Info: File `audition.out' has not changed.
-(rerunfilecheck)             Checksum: E1094B8F3647C95A03DD3A3768D5A761;1072.
+(rerunfilecheck)             Checksum: DE3F65E85F4CB9467A0BD283D3CB24AB;1135.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 765.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 784.
  ) 
 Here is how much of TeX's memory you used:
- 22129 strings out of 493054
- 439912 string characters out of 6140586
- 557531 words of memory out of 5000000
- 25069 multiletter control sequences out of 15000+600000
+ 23745 strings out of 493054
+ 461008 string characters out of 6140586
+ 804263 words of memory out of 5000000
+ 26659 multiletter control sequences out of 15000+600000
  15204 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,13n,73p,388b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,13n,73p,388b,1670s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1493,10 +2229,10 @@ dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb>
-Output written on audition.pdf (18 pages, 290613 bytes).
+Output written on audition.pdf (19 pages, 299218 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

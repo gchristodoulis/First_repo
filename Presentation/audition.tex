@@ -95,6 +95,7 @@
 
 \usepackage{colortbl}
 \usepackage{multicol}
+\usepackage{listings}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -242,6 +243,24 @@ a b c & y \\
 \end{frame}
 
 
+%------------------------------------------------
+\begin{frame}
+\subsection{Demotivation}
+\frametitle{De-Motivation}
+\begin{columns}[c]
+
+\column{.5\textwidth}
+\scalebox{0.7}{
+\lstinputlisting{behavior.vhdl}
+}
+\column{.5\textwidth}
+\scalebox{0.3}{
+\lstinputlisting{testbench.vhdl}
+}
+
+
+\end{columns}
+\end{frame}
 %------------------------------------------------
 \begin{frame}
 \section{Optimization Using HLS tools}

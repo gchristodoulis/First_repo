@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.21)  18 FEB 2016 03:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.25)  18 FEB 2016 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -471,11 +471,11 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
 
-(/usr/share/texmf-dist/tex/latex/beamer/translator/translator.sty
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(/usr/share/texmf-dist/tex/latex/beamer/translator/translator-language-mappings
-.tex))) (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/translator-language-map
+pings.tex))) (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
 Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
@@ -656,26 +656,19 @@ Package: amsthm 2015/03/04 v2.20.2
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-(/usr/share/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault.sty
-Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-
-(/usr/share/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefault.sty
-Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-)
-(/usr/share/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemedefault.st
+(/usr/share/texmf-dist/tex/latex/beamer/base/themes/theme/beamerthemedefault.st
 y
-Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-)
-(/usr/share/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemedefault.st
-y
-Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
+(/usr/share/texmf-dist/tex/latex/beamer/base/themes/font/beamerfontthemedefault
+.sty)
+(/usr/share/texmf-dist/tex/latex/beamer/base/themes/color/beamercolorthemedefau
+lt.sty)
+(/usr/share/texmf-dist/tex/latex/beamer/base/themes/inner/beamerinnerthemedefau
+lt.sty
 \beamer@dima=\dimen186
 \beamer@dimb=\dimen187
 )
-(/usr/share/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemedefault.st
-y
-Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-))) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texmf-dist/tex/latex/beamer/base/themes/outer/beamerouterthemedefau
+lt.sty))) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen188
 \lightrulewidth=\dimen189
@@ -1336,28 +1329,28 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
 ut line 123.
 
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dicti
-onary/translator-basic-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-basic-
+dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliograph
-y-dictionary/translator-bibliography-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-biblio
+graphy-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-environment
--dictionary/translator-environment-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-enviro
+nment-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-months-dict
-ionary/translator-months-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-months
+-dictionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-numbers-dic
-tionary/translator-numbers-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-number
+s-dictionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dic
-tionary/translator-theorem-dictionary-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-theore
+m-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 123.
@@ -1391,7 +1384,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <lutMux.jpg, id=136, 411.5375pt x 468.75125pt>
+] <lutMux.jpg, id=142, 411.5375pt x 468.75125pt>
 File: lutMux.jpg Graphic file (type jpg)
  <use lutMux.jpg>
 Package pdftex.def Info: lutMux.jpg used on input line 180.
@@ -1399,7 +1392,7 @@ Package pdftex.def Info: lutMux.jpg used on input line 180.
 
 [4
 
- <./lutMux.jpg>] <lutExplan.jpg, id=143, 330.23375pt x 315.1775pt>
+ <./lutMux.jpg>] <lutExplan.jpg, id=149, 330.23375pt x 315.1775pt>
 File: lutExplan.jpg Graphic file (type jpg)
 
 <use lutExplan.jpg>
@@ -1408,14 +1401,14 @@ Package pdftex.def Info: lutExplan.jpg used on input line 219.
  [5
 
  <./lutExplan.jpg>]
-<lutBLE.jpg, id=150, 1452.42625pt x 789.95125pt>
+<lutBLE.jpg, id=156, 1452.42625pt x 789.95125pt>
 File: lutBLE.jpg Graphic file (type jpg)
  <use lutBLE.jpg>
 Package pdftex.def Info: lutBLE.jpg used on input line 231.
 (pdftex.def)             Requested size: 276.559pt x 150.40569pt.
  [6
 
- <./lutBLE.jpg>] <full.jpg, id=155, 641.39626pt x 675.52374pt>
+ <./lutBLE.jpg>] <full.jpg, id=161, 641.39626pt x 675.52374pt>
 File: full.jpg Graphic file (type jpg)
  <use full.jpg>
 Package pdftex.def Info: full.jpg used on input line 243.
@@ -2129,59 +2122,74 @@ Overfull \vbox (537.76416pt too high) detected at line 263
 
 [8
 
-]
-Overfull \hbox (14.51433pt too wide) in paragraph at lines 310--310
+] <fpgaefficiency.jpg, id=172, 672.5125pt x 370.38374pt>
+File: fpgaefficiency.jpg Graphic file (type jpg)
+
+<use fpgaefficiency.jpg>
+Package pdftex.def Info: fpgaefficiency.jpg used on input line 276.
+(pdftex.def)             Requested size: 307.28987pt x 169.23695pt.
+ [9
+
+ <./fpgaefficiency.jpg>]
+Overfull \hbox (11.49867pt too wide) in paragraph at lines 312--312
 [][]  
- []
-
-
-Overfull \hbox (38.34889pt too wide) detected at line 310
-[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][
-][][][][][] $[]$[][][][][][] 
- []
-
-[9
-
-]
-Overfull \hbox (1325.89891pt too wide) detected at line 349
-[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [10
 
 ]
-Overfull \hbox (6.08977pt too wide) in paragraph at lines 404--404
+Overfull \hbox (14.51433pt too wide) in paragraph at lines 359--359
 [][]  
+ []
+
+
+Overfull \hbox (38.34889pt too wide) detected at line 359
+[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][
+][][][][][] $[]$[][][][][][] 
  []
 
 [11
 
-] <pipeline.jpg, id=181, 332.24126pt x 289.08pt>
+]
+Overfull \hbox (1325.89891pt too wide) detected at line 398
+[][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[12
+
+]
+Overfull \hbox (6.08977pt too wide) in paragraph at lines 453--453
+[][]  
+ []
+
+[13
+
+] <pipeline.jpg, id=198, 332.24126pt x 289.08pt>
 File: pipeline.jpg Graphic file (type jpg)
  <use pipeline.jpg>
-Package pdftex.def Info: pipeline.jpg used on input line 457.
+Package pdftex.def Info: pipeline.jpg used on input line 506.
 (pdftex.def)             Requested size: 138.2795pt x 120.31442pt.
- [12
+ [14
 
- <./pipeline.jpg>] [13
+ <./pipeline.jpg>] [15
 
-] <arraysplit.jpg, id=191, 641.39626pt x 324.21124pt>
+] <arraysplit.jpg, id=207, 641.39626pt x 324.21124pt>
 File: arraysplit.jpg Graphic file (type jpg)
 
 <use arraysplit.jpg>
-Package pdftex.def Info: arraysplit.jpg used on input line 655.
+Package pdftex.def Info: arraysplit.jpg used on input line 704.
 (pdftex.def)             Requested size: 110.62659pt x 55.9166pt.
- [14
+ [16
 
- <./arraysplit.jpg>] [15
-
-] [16
-
-] [17
+ <./arraysplit.jpg>] [17
 
 ] [18
 
 ] [19
+
+] [20
+
+] [21
 
 ]
 \tf@nav=\write6
@@ -2193,14 +2201,14 @@ Package pdftex.def Info: arraysplit.jpg used on input line 655.
 \tf@snm=\write8
 \openout8 = `audition.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 833.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 833.
 
 (./audition.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 784.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 833.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 833.
 Package rerunfilecheck Info: File `audition.out' has not changed.
-(rerunfilecheck)             Checksum: DE3F65E85F4CB9467A0BD283D3CB24AB;1135.
+(rerunfilecheck)             Checksum: FD1055AB8A4C3F26D7C0EDF6C103F2B2;1196.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2209,13 +2217,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 784.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 833.
  ) 
 Here is how much of TeX's memory you used:
- 23745 strings out of 493054
- 461008 string characters out of 6140586
- 804263 words of memory out of 5000000
- 26659 multiletter control sequences out of 15000+600000
+ 23762 strings out of 493054
+ 461425 string characters out of 6140586
+ 804253 words of memory out of 5000000
+ 26670 multiletter control sequences out of 15000+600000
  15204 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,13n,73p,388b,1670s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2229,10 +2237,10 @@ dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb>
-Output written on audition.pdf (19 pages, 299218 bytes).
+Output written on audition.pdf (21 pages, 372949 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -280,6 +280,8 @@ a b c & y \\
 
 \begin{block}{Acceleration}
 \scalebox{0.8}{
+\begin{table}
+
 \begin{tabular}{|c|c|c|c|}
 \hline
 \alert{Application} & \alert{ CPU only} & \alert{FPGA co-processing} & \alert{Factor}\\
@@ -306,6 +308,9 @@ BJM (5M paths) & 6300 sec & 242 sec  & $\times 26$ \\
 (Financial) & Pentium 4 @1.5GHz & 61MHz & \\
 \hline
 \end{tabular}
+
+\end{table}
+
 }
 \end{block}
 
